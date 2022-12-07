@@ -1,0 +1,108 @@
+@media screen and (max-width: 800px) {
+  .jumbotron {
+    flex-direction: column-reverse;
+  }
+
+  .jumbo1 {
+    align-items: center;
+  }
+
+  main .jumbo1 .textjumbo {
+    font-size: 50px;
+  }
+
+  main .jumbo1 .textjumbo small {
+    color: rgb(73, 73, 73);
+  }
+
+  main .jumbo1 p {
+    color: rgb(73, 73, 73);
+    text-align: center;
+    font-size: 20px;
+  }
+
+  main .jumbo2 img {
+    width: 350px;
+  }
+
+  .catalogue {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    grid-template-rows: repeat(2);
+  }
+
+  main article .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main .jumbo2 img {
+    width: 300px;
+  }
+
+  main .jumbo1 .textjumbo {
+    font-size: 40px;
+  }
+
+  main article .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main .jumbo1 .textjumbo {
+    font-size: 50px;
+  }
+
+  main .jumbo1 p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  main .jumbo2 img {
+    width: 370px;
+  }
+
+  .catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: repeat(2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbotron {
+    flex-direction: row;
+  }
+
+  .jumbo1 {
+    align-items: flex-start;
+  }
+
+  main .jumbo1 .textjumbo small {
+    color: white;
+  }
+
+  main .jumbo1 p {
+    color: white;
+    text-align: left;
+  }
+
+  main .jumbo2 img {
+    width: 550px;
+  }
+
+  main article .about {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  main .jumbo2 img {
+    width: 700px;
+  }
+}

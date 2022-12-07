@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/landingpage.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/responsive_navbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/responsive_footer.css') }}" />
+    <title>SIGN LANGUAGE</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="logo">
+        <h1>SIGN LANGUAGE</h1>
+      </div>
+      <nav>
+        <ul id="navbar" class="close">
+          <li><a href="#">Home</a></li>
+          <li><a href="#videoscreen">Predict</a></li>
+          <li><a href="#textfooter">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <!-- start jumbotron -->
+      <div class="jumbotron">
+        <div class="jumbo1">
+          <div class="textjumbo">
+            <b>Communicate with Deaf and Hard Of Hearing People</b>
+            <br />
+            <small></small>
+          </div>
+          <p>Learning has never been so easy! With world of Languages, you will learn to speak your dream language in no time.</p>
+          <button class="button"><a href="#videoscreen">GET START</a></button>
+        </div>
+        <div class="jumbo2">
+          <img class="floating" src="{{ url_for('static',filename='images/Ilustrasi.png') }}" />
+        </div>
+      </div>
+      <!-- end jumbotron -->
+      <div id="videoscreen" class="videoscreen">
+        <h1>Camera</h1>
+        <img id="videoElement" src="{{ url_for('video_feed') }}" />
+      </div>
+    </main>
+    <!-- end main -->
+    <footer>
+      <div id="textfooter" class="textfooter">
+        <div class="company">
+          <h4>Company</h4>
+          <a href="#"></a>ORBIT FUTURE ACADEMY<br/>
+        </div>
+        <div class="student">
+          <h4>Our Team</h4>
+          <a href="#">Anggi Vivi Febrina Silalahi - Universitas Udayana</a><br />
+          <a href="#">Agustina Setianing Budi - Universitas Udayana</a><br />
+          <a href="#">Indah Wulandari - Universitas Sari Mulia</a><br />
+          <a href="#">Maria Ulfah - Universitas Sari Mulia</a><br />
+          <a href="#">M. Zaini Bakri - Universitas Sari Mulia</a><br />
+        </div>
+        <div class="touchus">
+          <h4>Touch Us</h4>
+          <a href="#">SIGN TEAM</a><br />
+          <a href="#">BALI, INDONESIA</a><br />
+          <a href="#">+62 821 3816 8066</a><br />
+        </div>
+      </div>
+      <hr />
+      <p>2022 Copyright ECS by SIGN TEAM. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

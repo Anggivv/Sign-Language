@@ -1,0 +1,40 @@
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 730px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  header nav ul {
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background-color: #fa8432;
+    margin: 50px 0px;
+    transition: all 300ms ease-in-out;
+  }
+
+  .close {
+    transform: translateY(-1000px);
+  }
+
+  header nav ul li {
+    margin: 20px 30px;
+  }
+}
